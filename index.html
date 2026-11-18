@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony | Desarrollador Web</title>
+    <link rel="stylesheet" href="css/portafolio.css">
+    <script src="https://kit.fontawesome.com/4173e70f97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-wrap">
+            <a href="#inicio" class="logo">ANTHONY</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre mí</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="avatar">A</div>
+            <h1>ANTHONY</h1>
+            <p>Estudiante de Diseño y Desarrollo de Software en TECSUP. Creo páginas web claras, responsive y funcionales.</p>
+            <a href="#portafolio" class="btn">Ver portafolio</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="seccion">
+        <div class="container">
+            <h2>SOBRE MÍ</h2>
+            <p class="intro">Estoy aprendiendo a diseñar y programar sitios web completos, desde la maquetación hasta la base de datos. Mi meta es practicar con proyectos reales y empezar a trabajar como freelancer.</p>
+            <div class="cards">
+                <article class="card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5 y CSS3</h3>
+                    <p>Maquetación y diseño responsive.</p>
+                </article>
+                <article class="card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Menús, validaciones e interactividad.</p>
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>SQL y MySQL</h3>
+                    <p>Bases de datos y consultas.</p>
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Java y PHP</h3>
+                    <p>Lógica del lado del servidor.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="seccion">
+        <div class="container">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <a href="#" class="item">
+                    <img src="img/spa00.jpg" alt="Proyecto 1">
+                    <div class="item-info"><h3>Proyecto 1</h3><p>Landing page responsive.</p></div>
+                </a>
+                <a href="#" class="item">
+                    <img src="img/spa01.jpg" alt="Proyecto 2">
+                    <div class="item-info"><h3>Proyecto 2</h3><p>Base de datos con MySQL.</p></div>
+                </a>
+                <a href="#" class="item">
+                    <img src="img/spa02.jpg" alt="Proyecto 3">
+                    <div class="item-info"><h3>Proyecto 3</h3><p>Aplicación con Java.</p></div>
+                </a>
+                <a href="#" class="item">
+                    <img src="img/spa03.jpg" alt="Proyecto 4">
+                    <div class="item-info"><h3>Proyecto 4</h3><p>Formulario conectado a la base.</p></div>
+                </a>
+                <a href="#" class="item">
+                    <img src="img/spa04.jpg" alt="Proyecto 5">
+                    <div class="item-info"><h3>Proyecto 5</h3><p>Diseño de interfaz.</p></div>
+                </a>
+                <a href="#" class="item">
+                    <img src="img/spa05.jpg" alt="Proyecto 6">
+                    <div class="item-info"><h3>Proyecto 6</h3><p>Práctica con JavaScript.</p></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="seccion">
+        <div class="container">
+            <h2>TESTIMONIOS</h2>
+            <div class="testi">
+                <article class="card">
+                    <p>"Trabajar con Anthony fue muy fácil, siempre cumplía con su parte."</p>
+                    <div class="autor">
+                        <span class="inicial">N</span>
+                        <div><h4>Nombre del compañero</h4><span>Compañero de clase</span></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <p>"Demuestra buena disposición para aprender y resolver problemas en clase."</p>
+                    <div class="autor">
+                        <span class="inicial">D</span>
+                        <div><h4>Nombre del docente</h4><span>Docente TECSUP</span></div>
+                    </div>
+                </article>
+                <article class="card">
+                    <p>"Su código es ordenado y siempre está dispuesto a ayudar a otros."</p>
+                    <div class="autor">
+                        <span class="inicial">N</span>
+                        <div><h4>Nombre del compañero</h4><span>Compañero de clase</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <div class="container contacto-grid">
+            <div>
+                <h2>CONTACTO</h2>
+                <p>¿Tienes un proyecto o quieres conversar sobre una página web? Escríbeme y te respondo lo antes posible.</p>
+            </div>
+            <div class="form">
+                <form action="/validar" method="post">
+                    <label for="nombres">Nombre completo *</label>
+                    <input type="text" id="nombres" name="nombres" required>
+
+                    <label for="celular">Teléfono *</label>
+                    <input type="tel" id="celular" name="celular" maxlength="9" required>
+
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="comentarios">Consulta *</label>
+                    <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Anthony. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
